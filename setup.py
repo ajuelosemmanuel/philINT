@@ -1,4 +1,8 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="philINT",
@@ -9,7 +13,7 @@ setup(
     install_requires=["iso-639","pycountry","httpx","selenium", "gpxpy", "folium", "asyncio", "pandas"],
     description="philINT is a library that allows OSINT investigators to retrieve and organize data from an email address or an username.",
     long_description_content_type='text/markdown',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     include_package_data=True,
     url="https://github.com/ajuelosemmanuel/philINT",
     entry_points = {
