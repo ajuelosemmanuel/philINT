@@ -158,13 +158,13 @@ For web scraping, I use Selenium, and all the code is async compatible - with no
 
 | Source      | Domain          | Email | Username |
 | ----------- | --------------- | ----- | -------- |
-| Adobe       | adobe.com       | ✅    | ❌       |
-| Chess.com   | chess.com       | ✅    | ✅       |
-| Duolingo    | duolingo.com    | ✅    | ✅       |
-| GitHub      | github.com      | ✅    | ✅       |
-| Gravatar    | gravatar.com    | ✅    | ❌       |
-| Imgur       | imgur.com       | ✅    | ❌       |
-| MeWe        | mewe.com        | ✅    | ❌       |
-| MyAnimeList | myanimelist.net | ❌    | ✅       |
-| Twitter     | twitter.com     | ✅    | ❌       |
-| WordPress   | wordpress.com   | ✅    | ❌       |
+| Adobe       | adobe.com       | ✓    | ✗       |
+| Chess.com   | chess.com       | ✓    | ✓       |
+| Duolingo    | duolingo.com    | ✓    | ✓       |
+| GitHub      | github.com      | ✓    | ✓       |
+| Gravatar    | gravatar.com    | ✓    | ✗       |
+| Imgur       | imgur.com       | ✓    | ✗       |
+| MeWe        | mewe.com        | ✓    | ✗       |
+| MyAnimeList | myanimelist.net | ✗    | ✓       |
+| Twitter     | twitter.com     | ✓    | ✗       |
+| WordPress   | wordpress.com   | ✓    | ✗       |
