@@ -19,14 +19,14 @@ def duolingo_response_parser(response):
             print("Duolingo : found multiple (" + str(usercount) + ") users.")
     results = [
         DuolingoData(
-        Username = user["username"],
+        Username = user["username"] if user["username"] != "" else None,
         Picture = "https:" + user["picture"] + "/xxlarge" if "default" not in user["picture"] else None,
-        Name = user["name"] if "name" in user else None,
-        Account_creation_date = str(datetime.datetime.fromtimestamp(user["creationDate"])),
-        Country = pycountry.countries.get(alpha_2=user["profileCountry"]).name if user["profileCountry"] is not None else None,
+        Name = user["name"] if "name" in user and user["name"] != "" else None,
+        Account_creation_date = str(datetime.datetime.fromtimestamp(user["creationDate"])) if "creationDate" in user else None,
+        Country = pycountry.countries.get(alpha_2=user["profileCountry"]).name if "profileCountry" in user and user["profileCountry"] is not None else None,
         Streak = str(user["streak"]),
         Has_recent_activity = str(user["hasRecentActivity15"]),
-        Bio = user["bio"] if user["bio"] != "" else None,
+        Bio = user["bio"] if "bio" in user and user["bio"] != "" else None,
         Languages_studied = [
             Course(
                 Language = course["title"],
