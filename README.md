@@ -168,3 +168,5 @@ For web scraping, I use Selenium, and all the code is async compatible - with no
 | MyAnimeList | myanimelist.net | ✗    | ✓       |
 | Twitter     | twitter.com     | ✓    | ✗       |
 | WordPress   | wordpress.com   | ✓    | ✗       |
+
+*Chess.com* : I'm not sure whether it's still working or not - need to troubleshoot.
