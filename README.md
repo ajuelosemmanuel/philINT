@@ -156,6 +156,8 @@ For web scraping, I use Selenium, and all the code is async compatible - with no
 
 ## Modules
 
+⚠️ *Chess.com* : Apparently, the email search is not working. After some tests, it is most likely an issue from chess.com or something complicated. I'm gonna wait a bit until I investigate, see if it changes.
+
 | Source      | Domain          | Email | Username |
 | ----------- | --------------- | ----- | -------- |
 | Adobe       | adobe.com       | ✓    | ✗       |
@@ -168,5 +170,3 @@ For web scraping, I use Selenium, and all the code is async compatible - with no
 | MyAnimeList | myanimelist.net | ✗    | ✓       |
 | Twitter     | twitter.com     | ✓    | ✗       |
 | WordPress   | wordpress.com   | ✓    | ✗       |
-
-*Chess.com* : I'm not sure whether it's still working or not - need to troubleshoot.
